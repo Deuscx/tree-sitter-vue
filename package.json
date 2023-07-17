@@ -13,27 +13,15 @@
   "bugs": "https://github.com/deuscx/tree-sitter-vue/issues",
   "scripts": {
     "build": "tree-sitter generate",
-    "lint": "eslint .",
-    "lint:fix": "nr lint --fix",
     "release": "bumpp && npm publish",
     "prepublishOnly": "nr build"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
     "bumpp": "^9.1.1",
-    "eslint": "^8.45.0",
-    "lint-staged": "^13.2.3",
     "tree-sitter-cli": "^0.20.8"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx,vue,md}": [
-      "eslint --fix"
-    ]
   },
   "dependencies": {
     "nan": "^2.17.0"
-  }
+  },
+  "main": "bindings/node"
 }
