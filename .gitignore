@@ -1,0 +1,17 @@
+.cache
+.DS_Store
+.idea
+.nuxt
+.output
+.temp
+*.local
+*.log
+*.vsix
+bench/source/gen*.js
+coverage
+dist
+examples/**/pnpm-lock.yaml
+node_modules
+packages/runtime/*.global.js
+packages/vscode/LICENSE
+result.json

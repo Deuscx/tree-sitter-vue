@@ -1,0 +1,60 @@
+{
+  "name": "pkg-name",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@8.6.8",
+  "author": "Deuscx",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/deuscx",
+  "homepage": "https://github.com/deuscx/pkg-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deuscx/pkg-name.git"
+  },
+  "bugs": "https://github.com/deuscx/pkg-name/issues",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "tsx ./src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "nr lint --fix",
+    "release": "bumpp && npm publish",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:update": "vitest -u",
+    "prepublishOnly": "nr build"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.45.0",
+    "lint-staged": "^13.2.3",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vite": "4.4.4",
+    "vite-plugin-inspect": "^0.7.33",
+    "vitest": "^0.33.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --fix"
+    ]
+  }
+}
