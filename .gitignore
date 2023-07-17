@@ -16,3 +16,4 @@ packages/runtime/*.global.js
 packages/vscode/LICENSE
 result.json
 parser.*
+build
