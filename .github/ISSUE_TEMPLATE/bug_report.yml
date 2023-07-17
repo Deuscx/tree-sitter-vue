@@ -1,6 +1,6 @@
 name: 🐞 Bug report
 title: '[BUG] - YOUR_ISSUE_TITLE_HERE_REPLACE_ME'
-description: Report an issue with pkg-name
+description: Report an issue with tree-sitter-vue
 labels: [bug]
 body:
   - type: markdown
@@ -49,11 +49,11 @@ body:
       label: Validations
       description: Before submitting the issue, please make sure you do the following
       options:
-        - label: Read the [Contributing Guidelines](https://github.com/deuscx/pkg-name/blob/main/CONTRIBUTING.md).
+        - label: Read the [Contributing Guidelines](https://github.com/deuscx/tree-sitter-vue/blob/main/CONTRIBUTING.md).
           required: true
-        - label: Read the [docs](https://github.com/deuscx/pkg-name/).
+        - label: Read the [docs](https://github.com/deuscx/tree-sitter-vue/).
           required: true
-        - label: Check that there isn't [already an issue](https://github.com/deuscx/pkg-name/issues) that reports the same bug to avoid creating a duplicate.
+        - label: Check that there isn't [already an issue](https://github.com/deuscx/tree-sitter-vue/issues) that reports the same bug to avoid creating a duplicate.
           required: true
         - label: The provided reproduction is a [minimal reproducible example](https://stackoverflow.com/help/minimal-reproducible-example) of the bug.
           required: true

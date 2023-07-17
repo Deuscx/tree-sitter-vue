@@ -1,6 +1,6 @@
 name: Others
 
-description: Create an issue for pkg-name
+description: Create an issue for tree-sitter-vue
 
 body:
   - type: textarea

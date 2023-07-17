@@ -1,6 +1,6 @@
 name: 🚀 New feature proposal
 title: '[Feature Request] - YOUR_FEATURE_TITLE_HERE_REPLACE_ME'
-description: Propose a new feature to be added to pkg-name
+description: Propose a new feature to be added to tree-sitter-vue
 labels: [feature request]
 body:
   - type: markdown

@@ -1,13 +1,13 @@
-# pkg-name
+# tree-sitter-vue
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/deuscx/pkg-name">
+  <a href="https://github.com/deuscx/tree-sitter-vue">
     <!-- <img src="" alt="Logo" width="80" height="80"-->
   </a>
 
-  <h3 align="center">pkg-name</h3>
+  <h3 align="center">tree-sitter-vue</h3>
 
   <p align="center">
     a brief description
@@ -35,7 +35,7 @@ link to demo or gif link-->
 ## Installation
 
 ```bash
-pnpm install pkg-name
+pnpm install tree-sitter-vue
 ```
 
 
@@ -56,7 +56,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Add back to top links
 
 
-See the [open issues](https://github.com/deuscx/pkg-name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/deuscx/tree-sitter-vue/issues) for a full list of proposed features (and known issues).
 
 <!-- LICENSE -->
 ## License
@@ -64,13 +64,13 @@ See the [open issues](https://github.com/deuscx/pkg-name/issues) for a full list
 Distributed under the MIT License. See [`LICENSE`]('./LICENSE') for more information.
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/deuscx/pkg-name.svg?style=for-the-badge
-[contributors-url]: https://github.com/deuscx/pkg-name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/deuscx/pkg-name.svg?style=for-the-badge
-[forks-url]: https://github.com/deuscx/pkg-name/network/members
-[stars-shield]: https://img.shields.io/github/stars/deuscx/pkg-name.svg?style=for-the-badge
-[stars-url]: https://github.com/deuscx/pkg-name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/deuscx/pkg-name.svg?style=for-the-badge
-[issues-url]: https://github.com/deuscx/pkg-name/issues
-[license-shield]: https://img.shields.io/github/license/deuscx/pkg-name?style=for-the-badge
-[license-url]: https://github.com/deuscx/pkg-name/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/deuscx/tree-sitter-vue.svg?style=for-the-badge
+[contributors-url]: https://github.com/deuscx/tree-sitter-vue/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/deuscx/tree-sitter-vue.svg?style=for-the-badge
+[forks-url]: https://github.com/deuscx/tree-sitter-vue/network/members
+[stars-shield]: https://img.shields.io/github/stars/deuscx/tree-sitter-vue.svg?style=for-the-badge
+[stars-url]: https://github.com/deuscx/tree-sitter-vue/stargazers
+[issues-shield]: https://img.shields.io/github/issues/deuscx/tree-sitter-vue.svg?style=for-the-badge
+[issues-url]: https://github.com/deuscx/tree-sitter-vue/issues
+[license-shield]: https://img.shields.io/github/license/deuscx/tree-sitter-vue?style=for-the-badge
+[license-url]: https://github.com/deuscx/tree-sitter-vue/blob/master/LICENSE
