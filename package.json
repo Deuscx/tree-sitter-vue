@@ -14,7 +14,9 @@
   "scripts": {
     "build": "tree-sitter generate",
     "release": "bumpp && npm publish",
-    "prepublishOnly": "nr build"
+    "prepublishOnly": "nr build",
+    "wasm": "tree-sitter build-wasm",
+    "ui": "tree-sitter web-ui"
   },
   "devDependencies": {
     "bumpp": "^9.1.1",
