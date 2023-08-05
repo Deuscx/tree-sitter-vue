@@ -1,7 +1,7 @@
 const javascript = require('./javascript')
 /// <reference types="tree-sitter-cli/dsl" />
 module.exports = grammar({
-  name: "vue",
+  name: "vue3",
 
   externals: ($) => [
     $._text_fragment,
@@ -23,7 +23,10 @@ module.exports = grammar({
     $._ternary_qmark,
   ],
 
-  extras: ($) => [/\s+/],
+  extras: ($) => [
+    $.comment,
+    /[\s\p{Zs}\uFEFF\u2060\u200B]/,
+  ],
 
   rules: {
     component: ($) =>

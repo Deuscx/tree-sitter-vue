@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "vue3",
   "word": "identifier",
   "rules": {
     "component": {
@@ -7566,8 +7566,12 @@
   },
   "extras": [
     {
+      "type": "SYMBOL",
+      "name": "comment"
+    },
+    {
       "type": "PATTERN",
-      "value": "\\s+"
+      "value": "[\\s\\p{Zs}\\uFEFF\\u2060\\u200B]"
     }
   ],
   "conflicts": [
