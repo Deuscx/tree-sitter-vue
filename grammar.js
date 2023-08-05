@@ -1,3 +1,4 @@
+const javascript = require('./javascript')
 /// <reference types="tree-sitter-cli/dsl" />
 module.exports = grammar({
   name: "vue",
@@ -15,6 +16,11 @@ module.exports = grammar({
     $._implicit_end_tag,
     $.raw_text,
     $.comment,
+
+    // program
+    $._automatic_semicolon,
+    $._template_chars,
+    $._ternary_qmark,
   ],
 
   extras: ($) => [/\s+/],
@@ -97,7 +103,8 @@ module.exports = grammar({
     script_element: ($) =>
       seq(
         alias($.script_start_tag, $.start_tag),
-        optional($.raw_text),
+        optional(repeat($.statement)),
+        // optional($.raw_text),
         $.end_tag
       ),
 
@@ -225,5 +232,26 @@ module.exports = grammar({
     directive_modifiers: ($) =>
       repeat1(seq(token.immediate(prec(1, ".")), $.directive_modifier)),
     directive_modifier: ($) => token.immediate(/[^<>"'/=\s.]+/),
+
+    ...javascript.rules
   },
+
+  // program
+  supertypes: $ => [
+    ...javascript.supertypes($)
+  ],
+
+  inline: $ => [
+   ...javascript.inline($) 
+  ],
+
+  precedences: $ => [
+    ...javascript.precedences($) 
+  ],
+
+  conflicts: $ => [
+    ...javascript.conflicts($) 
+  ],
+
+  word: $ => $.identifier,
 });
