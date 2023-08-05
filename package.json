@@ -16,17 +16,21 @@
     "release": "bumpp && npm publish",
     "prepublishOnly": "nr build",
     "wasm": "tree-sitter build-wasm",
-    "ui": "tree-sitter web-ui"
+    "ui": "tree-sitter web-ui",
+    "dev": "npm run wasm && npm run ui"
   },
   "devDependencies": {
     "bumpp": "^9.1.1",
-    "tree-sitter-cli": "^0.20.8"
+    "tree-sitter-cli": "^0.20.8",
+    "tree-sitter-html": "^0.19.0",
+    "tree-sitter-javascript": "github:tree-sitter/tree-sitter-javascript#fdeb68a",
+    "tree-sitter-typescript": "^0.20.1"
   },
   "dependencies": {
     "nan": "^2.17.0"
   },
   "main": "bindings/node",
   "volta": {
-    "node": "14.21.3"
+    "node": "16.20.1"
   }
 }
