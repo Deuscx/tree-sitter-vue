@@ -10,7 +10,7 @@
   <h3 align="center">tree-sitter-vue</h3>
 
   <p align="center">
-    a brief description
+    A tree-sitter grammer for vue3
   </p>
 </div>
 
@@ -21,48 +21,48 @@
 [![Issues][issues-shield]][issues-url]
 [![GitHub][license-shield]][license-url]
 
-<!-- ## Features -->
+## Features
+
+- support script content analyze
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-<!-- ## Try it Online
-
-link to demo or gif link-->
+![](https://raw.githubusercontent.com/Deuscx/pic/master/20230806061125.png)
 
 ## Installation
 
 ```bash
-pnpm install tree-sitter-vue
+npm install @deuscx/tree-sitter-vue
 ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+use in lazy.nvim & tree-sitter nvim
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```lua
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.vue3 = {
+  install_info = {
+    url = "https://github.com/Deuscx/tree-sitter-vue", -- local path or git repo
+    files = {"src/parser.c", "scr/scanner.cc"}, -- note that some parsers also require src/scanner.c or src/scanner.cc
+    -- optional entries:
+    branch = "main", -- default branch in case of git repo if different from master
+    generate_requires_npm = false, -- if stand-alone parser without npm dependencies
+    requires_generate_from_grammar = false, -- if folder contains pre-generated src/parser.c
+  },
+  filetype = "vue", -- if filetype does not match the parser name
+}
+```
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [ ] Add back to top links
-
+Then use `TSInstall vue3` to install it.
 
 See the [open issues](https://github.com/deuscx/tree-sitter-vue/issues) for a full list of proposed features (and known issues).
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [`LICENSE`]('./LICENSE') for more information.
-
+Distributed under the MIT License. See [LICENSE]('./LICENSE') for more information.
 
 [contributors-shield]: https://img.shields.io/github/contributors/deuscx/tree-sitter-vue.svg?style=for-the-badge
 [contributors-url]: https://github.com/deuscx/tree-sitter-vue/graphs/contributors
@@ -74,3 +74,7 @@ Distributed under the MIT License. See [`LICENSE`]('./LICENSE') for more informa
 [issues-url]: https://github.com/deuscx/tree-sitter-vue/issues
 [license-shield]: https://img.shields.io/github/license/deuscx/tree-sitter-vue?style=for-the-badge
 [license-url]: https://github.com/deuscx/tree-sitter-vue/blob/master/LICENSE
+
+## Credits & External Resources
+
+- [tree-sitter-vue](https://github.com/ikatyang/tree-sitter-vue)
