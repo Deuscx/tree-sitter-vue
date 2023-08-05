@@ -1,7 +1,7 @@
 const javascript = require('./javascript')
 /// <reference types="tree-sitter-cli/dsl" />
 module.exports = grammar({
-  name: "vue3",
+  name: "vue",
 
   externals: ($) => [
     $._text_fragment,
