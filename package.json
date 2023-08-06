@@ -1,6 +1,6 @@
 {
-  "name": "tree-sitter-vue",
-  "version": "0.0.0",
+  "name": "@deuscx/tree-sitter-vue",
+  "version": "0.0.1",
   "private": true,
   "author": "Deuscx",
   "license": "MIT",
