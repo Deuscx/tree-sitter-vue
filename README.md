@@ -42,7 +42,7 @@ use in lazy.nvim & tree-sitter nvim
 
 ```lua
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.vue3 = {
+parser_config.vue = {
   install_info = {
     url = "https://github.com/Deuscx/tree-sitter-vue", -- local path or git repo
     files = {"src/parser.c", "scr/scanner.cc"}, -- note that some parsers also require src/scanner.c or src/scanner.cc
@@ -55,7 +55,7 @@ parser_config.vue3 = {
 }
 ```
 
-Then use `TSInstall vue3` to install it.
+Then use `TSInstall vue` to install it.
 
 See the [open issues](https://github.com/deuscx/tree-sitter-vue/issues) for a full list of proposed features (and known issues).
 
